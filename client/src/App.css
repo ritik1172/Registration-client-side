@@ -1,0 +1,124 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.head {
+  position: relative;
+  left: 55px; /* Center vertically */
+}
+
+.sign-up-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 150%;
+  max-width: 900px; /* Increased max-width for better visibility */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.sign-up-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex-shrink: 1;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.sign-up-form button {
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1em;
+  flex-shrink: 1;
+  box-sizing: border-box;
+}
+
+.sign-up-form button:hover {
+  background-color: rgb(60, 108, 108);
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  flex-shrink: 1;
+}
+
+@media (max-width: 600px) {
+  .sign-up-container {
+    padding: 15px;
+    max-width: 120%;
+  }
+
+  .head {
+    font-size: 0.9em;
+    position: relative;
+    left: 15px; /* Center vertically */
+  }
+
+  .sign-up-form input,
+  .sign-up-form button {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  .sign-up-container h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 400px) {
+  .sign-up-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .sign-up-form label {
+    font-size: 0.9em;
+  }
+
+  .sign-up-form input,
+  .sign-up-form button {
+    padding: 6px;
+    font-size: 0.8em;
+  }
+
+  .sign-up-container h2 {
+    font-size: 1.1em;
+  }
+}
